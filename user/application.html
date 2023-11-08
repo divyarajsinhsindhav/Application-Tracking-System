@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Application Form</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style/application.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .application-form {
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+     <!-- navbar  -->
+     <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
+        <div class="container-fluid">
+          <button class="button">ATS</button>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/ATS/index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/ATS/index/contectus.html">contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/ATS/Auth/login.html">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="logout" href="#">logout</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <div class="container">
+        <h2>Application Form</h2>
+        <div class="application-form" id="applicationForm">
+            <input type="hidden" id="userid" name="userid" value="">
+            <input type="hidden" id="email" name="email" value="">
+            <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" class="form-control" id="firstName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" class="form-control" id="lastName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="mobileNumber">Mobile Number</label>
+                <input type="tel" class="form-control" id="mobileNumber" required>
+            </div>
+
+            <!-- <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" class="form-control" id="email" required>
+            </div> -->
+
+            <div class="form-group">
+                <label for="address">Address</label>
+                <textarea class="form-control" id="address" rows="3" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" class="form-control" id="subject" required>
+            </div>
+
+            <div class="form-group">
+                <label for="applicationText">Application Text</label>
+                <textarea class="form-control" id="applicationText" rows="10" required></textarea>
+            </div>
+            <!-- <div class="form-group">
+                <label for="pdfDocument">Add Document</label>
+                <input type="file" class="form-control-file" id="pdfDocument">
+            </div> -->
+            <div class="form-group">
+                <label for="selection">Selection</label>
+                <select class="form-control" id="selection">
+                    <option value="Jilla Panchayat" defualt>Jilla Panchayat</option>
+                    <option value="Gram Panchayat">Gram Panchayat</option>
+                    <option value="Taluka Panchayat">Taluka Panchayat</option>
+                </select>
+            </div>
+            <button type="submit" id="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-auth-compat.js"></script>
+    <script src="/ATS/firebaseConfig.js"></script>
+    <script src="/ATS/user/script/application.js"></script>
+</body>
+</html>

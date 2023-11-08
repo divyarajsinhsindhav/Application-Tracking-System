@@ -1,0 +1,60 @@
+#navbarNav{
+    display: flex;
+    justify-content: end;
+     
+}
+
+.nav-item{
+    padding-right: 10px;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 10vh; /* This is optional but ensures vertical centering on the entire viewport height */
+  }
+  
+  table{
+    border-collapse: collapse;
+  }
+
+.app_info{
+    display: flex;
+    /* justify-content: space-evenly; */
+    /* background-color: #45a29e; */
+}
+
+.application_detail{
+    background-color: #45a29e; 
+}
+
+/* .card{
+    background-color: aqua;
+} */
+
+.heading{
+    display: flex;
+    justify-content: center;
+}
+body{
+    overflow-x: hidden;
+}
+
+h3{
+    margin: 1rem;
+}
+footer {
+    display: block;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #45a29e;
+    color: white;
+    text-align: center;
+ }
+
+@media (max-width: 768px) {
+    /* CSS rules for screens smaller than 768px */
+  }
+

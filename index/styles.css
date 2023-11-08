@@ -1,0 +1,38 @@
+html{
+   height: 100%;
+   width: 100%;
+}
+
+footer {
+    /* display: block; */
+    /* left: 0;
+    bottom: 0;
+    width: 100%; */
+    background-color: #45a29e;
+    color: white;
+    text-align: center;
+ }
+
+ .button{
+    background-color: #1f2833;
+    border: none;
+    color: #c5c6c7;
+    text-align: center;
+    text-decoration: double;
+    border-radius: 90%;
+    font-size: 25px;
+    box-shadow: 10rem;
+ }
+
+ .jumbotron{
+    background-color: #45a29e;
+    display: block;
+ }
+
+ h1{
+    color: #cff3f1;
+ }
+
+ .p{
+    color: #cff3f1;
+ }

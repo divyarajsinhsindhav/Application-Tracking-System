@@ -1,0 +1,44 @@
+#navbarNav{
+    display: flex;
+    justify-content: end;
+     
+}
+
+.nav-item{
+    padding-right: 10px;
+}
+
+.btn{
+    width: 100%;
+
+}
+.button{
+    background-color: #1f2833;
+    border: none;
+    color: #c5c6c7;
+    text-align: center;
+    text-decoration: double;
+    border-radius: 90%;
+    font-size: 25px;
+    box-shadow: 10rem;
+ }
+#add-application{
+    background-color: #45a29e;
+    color: aliceblue;
+    border: none;
+}
+
+.btn:hover{
+    background-color: #2b7773;
+}
+
+.nav-item{
+    padding-right: 10px;
+}
+.app_dashboard{
+    display: flex;
+    justify-content: center;
+}
+h5{
+    padding: 2rem;
+}

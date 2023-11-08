@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Tracking System - Good Governance</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="index/styles.css">
+</head>
+
+<body>
+
+    <style>
+        /*
+=========================================
+    Custom Scrollbar
+=========================================
+*/
+
+::-webkit-scrollbar {
+  width: 0.625rem;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--white-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background:  #c5c6c7;
+}
+
+        /* Custom CSS */
+        body
+        {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .jumbotron
+            {
+                background-color: #45a29e;
+                padding: 100px 0;
+                margin-bottom: 0;
+            }
+
+
+        /* img
+        {
+            object-fit: cover;
+        } */
+        
+        .header-text
+        {
+            position: absolute;
+            top: 50%;
+            left: 30%;
+            transform: translate(-50%, -50%);
+            color: rgb(0, 0, 0);
+            text-align: center;
+            margin-left: 15rem;
+        }
+
+        .header-text h1
+        {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .header-text p
+        {
+            font-size: 1.5em;
+        }
+
+        section
+        {
+            padding: 50px 0;
+        }
+
+        section h2
+        {
+            margin-bottom: 20px;
+        }
+    </style>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="button">ATS</button>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/ATS">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="Auth/login.html" class="nav-link">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a href="user/deshboard.html" class="nav-link">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/ATS/index/aboutus.html">About</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/ATS/index/contectus.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#logout" id="logout" class="nav-link">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="jumbotron position-relative">
+        <!-- <img src="/ATS/district-mainbanner.png" alt="Application Tracking System" class="w-100"> -->
+        <div class="header-text">    
+            <h1>Application Tracking System</h1>
+            <p class="p">Establishing Good Governance for Rajkot Gram and Jilla Panchayat</p>
+            
+        </div>
+    </header>
+
+
+    <!-- About Section -->
+    <section id="about" class="container">
+        <h2>About the System</h2>
+        <p>An Application Tracking System aimed at ensuring efficient governance within Rajkot Gram and Jilla Panchayat.
+            This system intends to streamline the process of handling applications, requests, and services offered by
+            the local government, providing transparency and accountability.</p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="bg-light">
+        <div class="container">
+            <h2>Our Services</h2>
+            <p>Our system offers the following services:</p>
+            <ul>
+                <li>Application submission and tracking</li>
+                <li>Transparent approval process</li>
+                <li>Efficient service delivery</li>
+                <li>Feedback and grievance redressal</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container">
+        <h2>Contact Us</h2>
+        <p>If you have any queries or need assistance, feel free to contact us at:</p>
+        <p>Email: dyddo-vikas-raj@gujarat.gov.in</p>
+        <p>Phone: 0281-123456</p>
+        <p>Address: 8Q4W+XJM, Shroff Rd, Sadar, Rajkot, Gujarat 360001</p>
+    </section>
+
+    <footer>
+        <p>All Rights Reserved<br>
+          © Copyright November 2023 by ATS, Rajkot <br>
+        </p>
+    </footer>
+    <script src="/ATS/firebaseConfig.js"></script>
+    <script src="/ATS/Auth/script/logout.js"></script>
+
+    
+</body>
+
+</html>
